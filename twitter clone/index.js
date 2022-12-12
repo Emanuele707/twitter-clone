@@ -93,16 +93,16 @@ function getFeedHtml(){
         if(tweet.replies.length > 0){
             tweet.replies.forEach(function(reply){
                 repliesHtml+=`
-<div class="tweet-reply">
-    <div class="tweet-inner">
-        <img src="${reply.profilePic}" class="profile-pic">
-            <div>
-                <p class="handle">${reply.handle}</p>
-                <p class="tweet-text">${reply.tweetText}</p>
-            </div>
+    <div class="tweet-reply">
+        <div class="tweet-inner">
+            <img src="${reply.profilePic}" class="profile-pic">
+                <div>
+                    <p class="handle">${reply.handle}</p>
+                    <p class="tweet-text">${reply.tweetText}</p>
+                </div>
         </div>
-</div>
-`
+    </div>
+    `
             })
         }
         
